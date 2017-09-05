@@ -123,7 +123,9 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 .bold {
 	color: black;
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Play &quot;Death of Miranda Brown&quot;" tags="Start" position="392,37">On July 28 at 10:13 PM, you arrive fashionably late to a rooftop party only to find police tapes outside of the hotel. Juding from the murmur around, it seems like a woman identified as Miranda Brown fell to her death from the rooftop of Manhattan Hotel. She was also a guest of the party you *were* going to attend, but no one has witnessed what caused her fall. 
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="Play &quot;Death of Miranda Brown&quot;" tags="Start" position="392,37">On July 28 at 10:13 PM, you arrive fashionably late to a rooftop party only to find police tapes outside of Manhattan hotel. Juding from the murmur around, it seems like a woman identified as Miranda Brown fell to her death from the rooftop of the hotel. She was also a guest of the party you *were* going to attend, but no one has witnessed what caused her fall. 
 
 It seems like the party isn&#x27;t much of a party anymore. 
 
@@ -139,18 +141,18 @@ Being a true millennial, [[I have to tweet about this.]]
 &lt;&lt;if $metPolice is &quot;True&quot;&gt;&gt;
 
 	&lt;&lt;if $found is &quot;True&quot;&gt;&gt;
-	Huh? The suspicious police officer I saw earlier is not here.
-	You feel disappointed, but the police officer you brought seems to rather believes your theory now. She buzzes someone.
-	&quot;We have a suspect on the run. Very blue eyes and short brown hair. Possibly in blue shirt and black slacks like that of officer.&quot;
-	Then you see the abandoned police badge and cap in the dark corner.
+	&#x27;Huh? The suspicious police officer I saw earlier is not here.&#x27;
+	You feel disappointed, but the police officer you brought seems to rather believe your theory now. She buzzes someone over radio.
+	&quot;We have a suspect on the run. Blue eyes and short brown hair. Possibly in blue shirt and black slacks like that of an officer.&quot;
+	Then you see the abandoned police badge in the dark corner.
 	&lt;&lt;else&gt;&gt;
 	&quot;Why are you here again?&quot;
-	The office demands.
-	Before you can answer, he pushes you away from the elevator and runs away. You shout out for help, looking for *real* police officers.
+	The officer demands.
+	Before you can answer, he pushes you away from the elevator and runs away. You shout out for help, looking for a *real* police officer.
 	&lt;&lt;endif&gt;&gt;
 	
 &lt;&lt;else&gt;&gt;
-As soon as you leave the elevators, you are stopped by a blue-eyed police officer.
+As soon as you leave the elevator, you are stopped by a blue-eyed police officer. 
 &quot;You can&#x27;t go in here.&quot;
 &quot;I am attending a party.&quot;
 &quot;I&#x27;m sorry, the party is over.&quot;
@@ -160,7 +162,7 @@ As soon as you leave the elevators, you are stopped by a blue-eyed police office
 Well, I guess I have no choice. [[Let&#x27;s go home.]]
 	&lt;&lt;if $tweet is &quot;True&quot;&gt;&gt;
 		&lt;&lt;if $found is &quot;True&quot;&gt;&gt;
-			Wait. He has very blue eyes like Elsa said. [[Let&#x27;s talk to another police officer.]]
+			Wait. He has very blue eyes like Elsa said. He seems suspicious. [[Let&#x27;s talk to another police officer.]]
 		&lt;&lt;else&gt;&gt;
 		I&#x27;m not sure what to do, but I don&#x27;t want to give up yet. [[Let&#x27;s go downstairs first.]]
 		&lt;&lt;endif&gt;&gt;
@@ -172,40 +174,40 @@ Well, I guess I have no choice. [[Let&#x27;s go home.]]
 </tw-passagedata><tw-passagedata pid="4" name="I have to tweet about this." tags="police" position="465,228">
 &lt;&lt;if $tweet is &quot;False&quot;&gt;&gt;
 	&lt;&lt;if $metPolice is &quot;True&quot;&gt;&gt;
-		&lt;div class=&quot;tweet&quot;&gt;@ocean4whales: Stopped by a police, gotta return home. But I realy wonder what happend to this guest at the party.&lt;/div&gt;
+		&lt;div class=&quot;tweet&quot;&gt;@ocean4whales: Stopped by a police, gotta return home. But I really wonder what happend to this guest at the party.&lt;/div&gt;
 		&lt;div class=&quot;tweet&quot;&gt;@3_pandas: @ocean4whales which party?&lt;/div&gt;
 		&lt;div class=&quot;tweet&quot;&gt;@ocean4whales: @3_pandas the cookbook release party by Chef Chianno&lt;/div&gt;
-		&lt;div class=&quot;tweet&quot;&gt;@3_pandas: @ocean4whales OH. One of my twitter friends has been tweeting about it. check her tweets -&gt; e l s a jin&lt;/div&gt;
+		&lt;div class=&quot;tweet&quot;&gt;@3_pandas: @ocean4whales OH. One of my Twitter friends has been tweeting about it. Check her tweets -&gt; e l s a jin&lt;/div&gt;
 		&lt;div class=&quot;tweet&quot;&gt;@ocean4whales: @3_pandas wow thanks!!!&lt;/div&gt;
 		&lt;&lt;set $tweet to &quot;True&quot;&gt;&gt;
 	&lt;&lt;else&gt;&gt;
 		&lt;div class=&quot;tweet&quot;&gt;@ocean4whales: Everyone has a first, but arriving to police tapes surrounding a fellow guest of the party is definitely THE first.&lt;/div&gt;
 		&lt;div class=&quot;tweet&quot;&gt;@3_pandas: @ocean4whales which party?&lt;/div&gt;
 		&lt;div class=&quot;tweet&quot;&gt;@ocean4whales: @3_pandas the cookbook release party by Chef Chianno&lt;/div&gt;
-		&lt;div class=&quot;tweet&quot;&gt;@3_pandas: @ocean4whales OH. One of my twitter friends has been tweeting about it. check her tweets -&gt; e l s a jin&lt;/div&gt;
+		&lt;div class=&quot;tweet&quot;&gt;@3_pandas: @ocean4whales OH. One of my Twitter friends has been tweeting about it. Check her tweets -&gt; e l s a jin&lt;/div&gt;
 		&lt;div class=&quot;tweet&quot;&gt;@ocean4whales: @3_pandas wow thanks!!!&lt;/div&gt;
 		&lt;&lt;set $tweet to &quot;True&quot;&gt;&gt;
 	&lt;&lt;endif&gt;&gt;
 &lt;&lt;else&gt;&gt;
-	&lt;div class=&quot;tweet&quot;&gt;@ocean4whales: Stopped by a police, gotta return home. But I realy wonder what happend to this guest at the party.&lt;/div&gt;
+	&lt;div class=&quot;tweet&quot;&gt;@ocean4whales: Stopped by a police, gotta return home. But I really wonder what happend to this guest at the party.&lt;/div&gt;
 But there&#x27;s also these tweets by Elsa...
 &lt;&lt;endif&gt;&gt;
 [[Check tweets by @elsajin]]
 [[Let&#x27;s go upstairs and find out what&#x27;s going on.]]
 </tw-passagedata><tw-passagedata pid="5" name="Check tweets by @elsajin" tags="" position="444,381">&lt;&lt;set $found to &quot;True&quot;&gt;&gt;
 &lt;div class=&quot;tweet&quot;&gt;@elsajin: For a book release party, this is really awesome. These cocktails are some of the best I&#x27;ve had in town&lt;/div&gt;
-&lt;div class=&quot;tweet&quot;&gt;@elsajin: Ummm a woman in red hair just downed shots. Do they even do shots at a party like this?&lt;/div&gt;
+&lt;div class=&quot;tweet&quot;&gt;@elsajin: Ummm a woman in red hair just downed several shots. Do they even do shots at a party like this?&lt;/div&gt;
 &lt;div class=&quot;tweet&quot;&gt;@elsajin: Ok. Life crisis. Not mine though. The red head is crying in the bathroom. WHATDOIDO&lt;/div&gt;
 &lt;div class=&quot;tweet&quot;&gt;@elsajin: I tried to console her, not really knowing what&#x27;s her problem. She just kept saying it&#x27;s ruined.&lt;/div&gt;
-&lt;div class=&quot;tweet&quot;&gt;@elsajin: The red hair lady is angrily speaking to a dude. Lover&#x27;s quarrel?&lt;/div&gt;
-&lt;div class=&quot;tweet bold&quot;&gt;@elsajin: The dude has *very blue eyes*. I must say. &lt;/div&gt;
-&lt;div class=&quot;tweet&quot;&gt;@elsajin: OMG OMG OMG She went off the roof. We heard her hit the pavement. The THUD.&lt;/div&gt;
+&lt;div class=&quot;tweet&quot;&gt;@elsajin: The redhead is angrily speaking to a dude. Lover&#x27;s quarrel?&lt;/div&gt;
+&lt;div class=&quot;tweet bold&quot;&gt;@elsajin: Wow, the dude has very blue eyes.&lt;/div&gt;
+&lt;div class=&quot;tweet&quot;&gt;@elsajin: OMG OMG OMG She went off the roof. We heard her hitting the pavement. The THUD.&lt;/div&gt;
 
 &lt;&lt;if $metPolice is &quot;True&quot;&gt;&gt;
 Very blue eyes. I think I saw them somewhere. The police officer! It can be a coincidence, but there&#x27;s no harm in checking it out.
 
-But first thing first. [[Let&#x27;s talk to another police officer.]]
-Time is ticking! [[Let&#x27;s go upstairs and find out what&#x27;s going on.]]
+But the first thing comes first. [[Let&#x27;s talk to another police officer.]]
+The time is ticking! [[Let&#x27;s go upstairs and find out what&#x27;s going on.]]
 &lt;&lt;else&gt;&gt;
 Miranda must have been very drunk. [[It must have been an accident.]]
 [[Let&#x27;s go upstairs and find out what&#x27;s going on.]]
@@ -214,9 +216,9 @@ Miranda must have been very drunk. [[It must have been an accident.]]
 horyunsong@gatech.edu
 SONG TWINE EXERCISE
 
-[[Play &quot;Death of Miranda Brown&quot;]]</tw-passagedata><tw-passagedata pid="7" name="Let&#x27;s talk to another police officer." tags="" position="409,560">You find a police officer outside of hotel near police tapes. You tell her what you learned from Twitter and the blue-eyed man you met upstairs. She looks at you awfully suspiciously, but says that she will go and check. 
+[[Play &quot;Death of Miranda Brown&quot;]]</tw-passagedata><tw-passagedata pid="7" name="Let&#x27;s talk to another police officer." tags="" position="409,560">You find a police officer outside of hotel near police tapes. You tell her what you learned from Twitter and the blue-eyed man you met upstairs. She looks at you like you are the suspicious one, but says that she will go and check. 
 
-[[Let&#x27;s go upstairs and find out what&#x27;s going on.]]</tw-passagedata><tw-passagedata pid="8" name="It must have been an accident." tags="" position="538,631">Well, it&#x27;s seems like there is not much beyond that. With inner peace knowing that no murder has taken place in the party venue, you decide to go home. 
+[[Let&#x27;s go upstairs and find out what&#x27;s going on.]]</tw-passagedata><tw-passagedata pid="8" name="It must have been an accident." tags="" position="538,631">Well, it&#x27;s seems like there is not much more beyond that. With inner peace knowing that no murder has taken place in the party venue, you decide to go home. 
 </tw-passagedata><tw-passagedata pid="9" name="Let&#x27;s go downstairs first." tags="" position="205,535">I&#x27;m outside of hotel. What do I do now?
 
 Perhaps I should check what @3_pandas said. [[Check tweets by @elsajin]]
